@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	background-image: url(../img/trianglify-lowres.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+/* 张堃茹:导航栏 */
+.nav{
+	width: 1200px;
+	height: 93px;
+	background: #ffffff;
+	margin: 0 auto;
+	border-bottom:3px solid #383838
+}
+
+#logo{
+	width:200px;
+	height: 70px;
+	background: #ffffff;
+	color:#aa0000;
+	float: left;
+	font:1.6em Arial, Helvetica, sans-serif;
+	padding-left:50px;
+	padding-top: 30px;
+}
+#nav{
+	width:700px;
+	height: 100px;
+	float: right;
+	/*background: #FFFFFF;*/
+}
+#nav ul {
+    width: 100%;
+	height: 100%;
+}
+#nav ul li {
+	float:left;
+	width: 140px;
+	height: 100px;
+	list-style: none;
+	font:1.4em Arial, Helvetica, sans-serif;
+	transition: all 0.5s;
+}
+#nav ul li a {
+	text-align:center;
+	color:#aa0000;
+	width:140px;
+	margin:0px;
+	padding: 0px 0px 0px 8px;
+	display:block;
+	/*
+		backdrop-filter: blur(100px); #ffffff;*/
+	line-height: 90px;
+	border-bottom:3px solid #383838;
+}
+#nav ul li ul li{
+	height: 0px;
+}
+#nav ul li ul li a{
+	background: #FFFFFF;
+	opacity:0.85;
+	line-height: 65px;
+	font-size:0.7em;
+}
+#nav ul li a:hover{
+	border-bottom:3px solid #e50000;
+}
+#nav ul li ul {
+	visibility: hidden;
+}
+#nav ul li:hover ul li{
+    height: 70px;
+	visibility: visible;
+	transition: all 0.3s
+}
+#nav ul li ul li a:hover{
+	background: #710001 ;
+	color: #FFFFFF;
+}
+
+.container{
+	width: 1200px;
+	height: fit-content;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+.container .day{
+	padding: 10px 10px 10px 10px;
+	backdrop-filter: blur(100px);
+	height: fit-content;
+
+}
+.container .title{/*设置标题样式*/
+	width: 100%;
+	height: 100px;
+	top: 0;
+	backdrop-filter: blur(500px);
+	text-align:center;
+	margin: auto;
+	/* border-bottom: 1px solid #e5e5e5; */
+	position: sticky;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 40px;
+
+}
+.container .little_title{
+	font-family: 宋体;
+	font-size: 30px;
+	margin: auto;
+	line-height: 50px;
+}
+.container .showPic{
+	width: 100%;
+	height: fit-content;
+		backdrop-filter: blur(100px);
+	display: flex;
+	justify-content : space-between;
+	/* border: 1px solid black; */
+}
+.container .showPic > div{
+	position: relative;
+	width: 350px;
+	height: 320px;
+	border-radius: 10px;
+	box-shadow: black 0px 0px 10px;
+	overflow: hidden;
+	margin: 10px;
+	/* border: 1px solid black; */
+}
+.showPic img{
+	width: 100%;
+	height: 100%;
+}
+.container .showPic > div:hover .description{
+	visibility: visible;
+	transition: all 0.5s ease;
+	filter: none;
+	z-index: 8;
+
+}
+.container .showPic > div:hover .Pic{
+filter: blur(5px);opacity:0.4;
+
+}
+.container div > .Pic{
+	position: absolute;
+	margin: initial;
+	border-radius: initial;
+	width: 100%;
+	height: 100%;
+	/* border: black solid 1px; */
+	z-index: 0;
+	transition: all 0.3s ease;
+}
+.container div > .description{
+	visibility: hidden;
+	position: absolute;
+	filter: blur(3px);
+	z-index: 8;
+	margin: initial;
+	border-radius: initial;
+	padding: 5px;
+	text-indent: 2em; /*段落前面空两格*/
+	line-height: 3em;
+	transition: all 0.3s;
+	font-family: 宋体;
+}
+.description span{
+	font-size: 15px;
+	font-family: 黑体;
+}
+.description .c{
+	font-size: 10px;
+
+}
+.container .summary{
+	width: 100%;
+	height: fit-content;
+	padding: 5px;
+	/* 	backdrop-filter: blur(100px); aquamarine; */
+	text-indent: 2em;  /*段落前面空两格*/
+	line-height: 2em;
+}
+.container .summary .a{
+	font-size: 25px;
+	font-family: 黑体;
+	margin: 10px;
+}
+.container .summary .b{
+	font-size: 18px;
+	font-family: 宋体;
+	line-height: 30px;
+
+}
+.container .Pic img{
+	height: 100%;
+	margin:  0 auto;
+}
+.container .description > p{
+	font-size: x-large;
+}
+.container .description > span{
+	font-size: xx-large;
+	font-weight: 600;
+}

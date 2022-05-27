@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	background-image: url(../img/trianglify-lowres.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+/* 张堃茹:导航栏 */
+.nav{
+	width: 1200px;
+	height: 93px;
+	background: #ffffff;
+	margin: 0 auto;
+	border-bottom:3px solid #383838
+}
+
+#logo{
+	width:200px;
+	height: 70px;
+	background: #ffffff;
+	color:#aa0000;
+	float: left;
+	font:1.6em Arial, Helvetica, sans-serif;
+	padding-left:50px;
+	padding-top: 30px;
+}
+#nav{
+	width:700px;
+	height: 100px;
+	float: right;
+	/*background: #FFFFFF;*/
+}
+#nav ul {
+    width: 100%;
+	height: 100%;
+}
+#nav ul li {
+	float:left;
+	width: 140px;
+	height: 100px;
+	list-style: none;
+	font:1.4em Arial, Helvetica, sans-serif;
+	transition: all 0.5s;
+}
+#nav ul li a {
+	text-align:center;
+	color:#aa0000;
+	width:140px;
+	margin:0px;
+	padding: 0px 0px 0px 8px;
+	display:block;
+	/*
+	background-color: #ffffff;*/
+	line-height: 90px;
+	border-bottom:3px solid #383838;
+}
+#nav ul li ul li{
+	height: 0px;
+}
+#nav ul li ul li a{
+	background: #FFFFFF;
+	opacity:0.85;
+	line-height: 65px;
+	font-size:0.7em;
+}
+#nav ul li a:hover{
+	border-bottom:3px solid #e50000;
+}
+#nav ul li ul {
+	visibility: hidden;
+}
+#nav ul li:hover ul li{
+    height: 70px;
+	visibility: visible;
+	transition: all 0.25s
+}
+#nav ul li ul li a:hover{
+	background: #710001 ;
+	color: #FFFFFF;
+}
+.xiangqingtitle{ /*这是标题部分*/
+	margin: 10px auto 0px;
+	background-color: rgba(255, 255, 255, 0.75);
+	width: 1200px;
+	height: 100px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 20px;
+}
+.box{
+	width: 1200px;
+	/* border: 1px solid black; */
+	height: fit-content;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box .list{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 360px;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: all 0.3s ease;
+	overflow: hidden;
+	border-radius: 8px;
+}
+.box .list img{
+	margin-top: 5px;
+	width: 350px;
+	height: 200px;
+}
+.box .list:hover {
+	background-color: #FAFAFA;
+	transform: scale(1.1);
+}
+.information1{
+	font-size: 30px;
+	font-weight: 700;
+	font-family:黑体 ;
+	margin: 20px;
+	color: black;
+}
+.information2{
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 宋体;
+	color: black;
+	margin: 10px;
+	line-height: 40px;
+}
+
+
+.cont{/*正文部分*/
+	border-radius: 5px;
+	padding: 20px;
+	width: 1200px;
+	font-family: 宋体;
+	margin: auto;
+	font-size: 20px;
+	line-height: 50px;
+	margin-bottom: 100px;
+	background-color: rgba(255, 255, 255, 0.75);
+}
